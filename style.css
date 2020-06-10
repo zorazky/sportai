@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --clr-light-grey: #EEF1F2;
+    --clr-dark-grey: #415962;
+    --clr-webo-green: #84C225;
+    --clr-dark-green: #4AB003;
+}
+
+body {
+    background-color: var(--clr-light-grey);
+}
+
+#brand.brand-logo {
+    color: var(--clr-webo-green);
+    font-family: 'Bebas Neue', cursive;
+}
+
+.dropdown-content {
+    top: 100% !important;
+  }
+
+.nav-wrapper ul li a {
+    color: var(--clr-dark-grey);
+} 
+
+.adcontainer {
+    display: flex;
+    
+     align-items: center;
+     justify-content: center;
+}
+
+.bannerad {
+   
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card .card-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.mainside {
+    border-bottom: 1px solid var(--clr-dark-grey);
+    padding-bottom: 8px;
+}
+
+.mainside span {
+    font-size: .7rem;
+    font-weight: bold;
+    margin: 0;
+    padding:0;
+}
+
+.mainside h4{
+    margin: 0;
+    padding:0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.mainside p {
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+.hero-image::after {
+    border-radius: 2px;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 50));
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+  }
