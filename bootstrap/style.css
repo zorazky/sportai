@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --clr-light-grey: #EEF1F2;
+    --clr-dark-grey: #415962;
+    --clr-webo-green: #84C225;
+    --clr-dark-green: #4AB003;
+}
+
+body {
+    background-color: var(--clr-light-grey);
+}
+
+.caontainer {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+#logo {
+    color: var(--clr-webo-green);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+
+.hero-image::after {
+    border-radius: 2px;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 50));
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+  }
+
+  .bannerad {
+      padding-bottom:30px;
+  }
+
+  .card {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border: none;
+  }
+
+  .card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .mainside {
+    border-bottom: 1px solid var(--clr-dark-grey);
+    padding-top: 5px;
+    
+}
+
+.mainside span {
+    font-size: .7rem;
+    font-weight: bold;
+    margin: 0;
+    padding:0;
+}
+
+.mainside h4{
+    color: var(--clr-dark-grey);
+    margin: 0;
+    padding:0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+
+.mainside p {
+    font-size: .9rem;
+    line-height: 1.1rem;
+    opacity: .8;
+}
